@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encriptador de texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src='script.js'></script>
+</head>
+
+<body>
+        <div class="contenedor">
+                <div class="izquierdo">
+                        <header>
+                            <a href="index.html"><img src="images/Letra_A.jpg" class="titulo-img"></a>
+                        </header>
+
+                        <textarea name="texto-encriptado" id="texto" cols="50" rows="40" placeholder="Ingrese el texto aqui" class="texto"></textarea>
+                        <div class="inferior">
+                            <img src="images/disclaimer.jpg" class="caps">
+                                <div class="botones">
+                                    <input type="submit" value="Encriptar" class="btn-Encriptar" id="btn-Encriptar" onclick="btnEncriptar()">
+                                    <input type="submit" value="Desencriptar" class="btn-Desencriptar" id="btn-Desencriptar" onclick="btnDesencriptar()">
+                                </div>
+                        </div>
+                </div>
+
+                <div class="pie">
+                    <img src="images/Persona.png" class="img-pie" id="img-titulo">
+                    <p id="parrafo">Ningun mensaje fue encontrado</p>
+                    <textarea class="texto-desencripta" id="texto2" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                    <input type="submit" value="Copiar" class="btn-copiar" id="btn-copiar" style="display: none;" onclick="copiarTexto()">
+                </div>
+        </div>
+</body>
+
+</html>
