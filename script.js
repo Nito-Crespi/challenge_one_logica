@@ -32,6 +32,9 @@ function btnDesencriptar() {
         return;
     }
 
+    document.getElementById("parrafo").innerText = "El texto encriptado es: ";
+    document.getElementById("img-titulo").style.display = "none";
+
     let textoDesencriptado = desencriptarTexto(texto);
 
     actualizarTexto(textoDesencriptado);
